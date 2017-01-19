@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.docs.guestbook.model.Entry">
+		<field name="EntryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="name" type="String" />
+		<field name="message" type="String" />
+	</model>
+</model-hints>

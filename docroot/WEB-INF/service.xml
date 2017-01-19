@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.liferay.docs.guestbook">
+	<author>Francesco</author>
+	<namespace>GB</namespace>
+
+	<entity name="Entry" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="EntryId" type="long" primary="true" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		
+		<column name="name" type="String" />
+		<column name="message" type="String" />
+
+
+		<!-- Finder methods -->
+
+		<finder name="GroupId" return-type="Collection">
+			<finder-column name="groupId" />
+		</finder>
+		
+		
+				<finder name="N_M" return-type="Collection">
+			<finder-column name="name" />
+						<finder-column name="message" />
+			
+		</finder>
+		
+		
+	</entity>
+</service-builder>
