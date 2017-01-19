@@ -2,6 +2,7 @@
 
 
 <%
+//ghfhg
     long guestbookId = Long.valueOf((Long) renderRequest
             .getAttribute("guestbookId"));
 %>
